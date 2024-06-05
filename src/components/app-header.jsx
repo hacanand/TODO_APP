@@ -3,7 +3,7 @@ import { useDispatch, useSelector }  from 'react-redux'
 import Button, { SelectButton } from "./button";
 import styles from "../styles/modules/app.module.scss";
 import TodoModal from "./todo-modal";
-import { updateFilterStatus } from "../slices/todoSlice";
+import { updateFilterStatus } from "../redux/todoSlice";
 
 function AppHeader() {
   const [modalOpen, setModalOpen] = useState(false);
