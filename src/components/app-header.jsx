@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import Button, { SelectButton } from "./Button";
+import { useDispatch, useSelector }  from 'redux'
+import Button, { SelectButton } from "./button";
 import styles from "../styles/modules/app.module.scss";
-import TodoModal from "./TodoModal";
+import TodoModal from "./todo-modal";
 import { updateFilterStatus } from "../slices/todoSlice";
 
 function AppHeader() {
