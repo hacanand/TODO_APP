@@ -20,6 +20,8 @@ function App() {
         toastOptions={{
           style: {
             fontSize: "1.4rem",
+            background:'black',
+            color:'gray',
           },
         }}
       />

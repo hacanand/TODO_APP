@@ -11,11 +11,11 @@
 	cursor: pointer;
 	overflow: hidden;
 	&__select {
-		color: var(--black-2);
+		color: var(--white);
 		font-family: Poppins;
 		padding: 1rem;
 		border: none;
-		background-color: var(--bg-3);
+		background-color:  rgb(97, 97, 181);
 
 		width: 150px;
 		cursor: pointer;

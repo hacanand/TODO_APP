@@ -11,7 +11,7 @@
 	align-items: center;
 }
 .container {
-	background-color: var(--bg-2);
+	background-color: rgb(52, 52, 79);
 	max-width: 500px;
 	width: 90%;
 	margin: 0 auto;
@@ -30,8 +30,8 @@
 	font-size: 2.5rem;
 	padding: 0.5rem;
 	border-radius: 4px;
-	background-color: var(--gray-1);
-	color: var(--black-2);
+	background-color: rgb(179, 66, 66);
+	color: whitesmoke;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -44,7 +44,7 @@
 	}
 }
 .formTitle {
-	color: var(--black-1);
+	color: rgb(216, 213, 213);
 	font-size: 2rem;
 	font-weight: 600;
 	margin-bottom: 2rem;
@@ -54,15 +54,25 @@
 	width: 100%;
 	label {
 		font-size: 1.6rem;
-		color: var(--black-1);
-		input,
-		select {
+		color: rgb(206, 198, 198);
+		input{
 			margin-top: 0.5rem;
 			margin-bottom: 2rem;
 			width: 100%;
 			padding: 1rem;
 			border: none;
-			background-color: var(--white);
+			border-radius: 10px;
+			background-color: rgb(199, 192, 192);
+			font-size: 1.6rem;
+		}
+		select {
+			margin-top: 0.5rem;
+			margin-bottom: 2rem;
+			width: 100%;
+			padding: 1rem;
+			border-radius: 10px;
+			border: none;
+			background-color: rgb(199, 192, 192);
 			font-size: 1.6rem;
 		}
 	}
