@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector }  from 'redux'
+import { useDispatch, useSelector }  from 'react-redux'
 import Button, { SelectButton } from "./button";
 import styles from "../styles/modules/app.module.scss";
 import TodoModal from "./todo-modal";

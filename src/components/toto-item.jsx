@@ -7,8 +7,8 @@ import { useDispatch } from "react-redux";
 import { deleteTodo, updateTodo } from "../slices/todoSlice";
 import styles from "../styles/modules/todoItem.module.scss";
 import { getClasses } from "../utils/getClasses";
-import CheckButton from "./CheckButton";
-import TodoModal from "./TodoModal";
+import CheckButton from "./check-button";
+import TodoModal from "./todo-modal";
 
 const child = {
   hidden: { y: 20, opacity: 0 },
