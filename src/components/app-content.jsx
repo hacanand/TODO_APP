@@ -51,7 +51,7 @@ function AppContent() {
             // </motion.div> // Commented out motion.div component
           ))
         ) : (
-          <motion.p variants={child} className={styles.emptyText}> // Paragraph element with emptyText styles
+          <motion.p variants={child} className={styles.emptyText}>  
             No Todos
           </motion.p>
         )}
