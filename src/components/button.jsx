@@ -1,11 +1,24 @@
+//document the given code
+
 import React from "react";
 import styles from "../styles/modules/button.module.scss";
 import { getClasses } from "../utils/getClasses";
 
-const buttonTypes = {
+const buttonTypes = { 
   primary: "primary",
   secondary: "secondary",
 };
+
+/**
+ * Button component.
+ *
+ * @param {Object} props - The component props.
+ * @param {string} props.type - The type of the button.
+ * @param {string} [props.variant="primary"] - The variant of the button.
+ * @param {ReactNode} props.children - The content of the button.
+ * @param {Object} rest - The remaining props.
+ * @returns {JSX.Element} The rendered button element.
+ */
 
 function Button({ type, variant = "primary", children, ...rest }) {
   return (

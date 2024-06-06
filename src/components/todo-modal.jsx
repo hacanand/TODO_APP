@@ -1,3 +1,5 @@
+ 
+// Import necessary dependencies
 import React, { useEffect, useState } from "react";
 import { v4 as uuid } from "uuid";
 import { MdOutlineClose } from "react-icons/md";
@@ -9,6 +11,7 @@ import { addTodo, updateTodo } from "../redux/todoSlice";
 import styles from "../styles/modules/modal.module.scss";
 import Button from "./button";
 
+// Define animation variants
 const dropIn = {
   hidden: {
     opacity: 0,
@@ -30,11 +33,13 @@ const dropIn = {
   },
 };
 
+// Define TodoModal component
 function TodoModal({ type, modalOpen, setModalOpen, todo }) {
   const dispatch = useDispatch();
   const [title, setTitle] = useState("");
   const [status, setStatus] = useState("incomplete");
 
+  // Set initial values for title and status based on type and todo prop
   useEffect(() => {
     if (type === "update" && todo) {
       setTitle(todo.title);
@@ -45,6 +50,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
     }
   }, [type, todo, modalOpen]);
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     if (title === "") {
@@ -76,6 +82,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
     }
   };
 
+  // Render TodoModal component
   return (
     <AnimatePresence>
       {modalOpen && (
@@ -98,7 +105,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
               onClick={() => setModalOpen(false)}
               role="button"
               tabIndex={0}
-              // animation
+              // Animation for close button
               initial={{ top: 40, opacity: 0 }}
               animate={{ top: -10, opacity: 1 }}
               exit={{ top: 40, opacity: 0 }}
